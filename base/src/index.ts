@@ -5,7 +5,7 @@ const TB = 1099511627776
 
 type Unit = 'KB' | 'MB' | 'TB'
 
-interface IStorage {
+export interface IStorage {
     number: number
     unit: Unit
 }
