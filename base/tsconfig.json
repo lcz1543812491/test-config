@@ -1,0 +1,15 @@
+{
+  "include": ["src"],
+  "exclude": ["babel.config.js"],
+  "compilerOptions": {
+    "strict": true,
+    "moduleResolution": "node",
+    "target": "esnext",
+    "module": "esnext",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "importHelpers": true,
+    "noEmitHelpers": true,
+    "types": ["jest"]
+  }
+}
