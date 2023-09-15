@@ -1,9 +1,10 @@
 import { Injectable } from '@nestjs/common';
-import {} from '../../src/index';
+import { formatStorageNumberToObj, IStorage } from './formate';
 
 @Injectable()
 export class AppService {
-  getHello(): string {
-    return 'Hello World!';
+  format(params): IStorage {
+    const res = formatStorageNumberToObj(params.number, params.decimal);
+    return res;
   }
 }
